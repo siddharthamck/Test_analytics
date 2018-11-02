@@ -58,6 +58,13 @@ jobs:
             echo "my artifact files in a dir" > /tmp/artifacts/artifact-2;
 
       - store_artifacts:
+          path: /tmp/artifact-1
+          destination: artifact-file
+
+      - store_artifacts:
+          path: /tmp/artifacts
+
+      - store_artifacts:
           path: test-reports
           destination: test-reports
           
