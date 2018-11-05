@@ -2,7 +2,6 @@ version: 2
 jobs:
  build:
    machine: true
-   context: testRai
    steps:
      - checkout
      # start proprietary DB using private Docker image
@@ -12,16 +11,8 @@ jobs:
      - run: |
          docker login -u $DOCKER_USER -p $DOCKER_PASS
 
-     - run : pwd
-
-     - run : ls
-
-     - run : cat code.py
-
-     - run : cat Dockerfile
-
      # build the application image
      - run: docker build -t company/app:$CIRCLE_BRANCH .
 
      # deploy the image
-     - run: docker push company/app:$CIRCLE_BRANCH
+     - run: docker push $CIRCLE_BRANCH
