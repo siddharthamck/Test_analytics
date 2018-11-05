@@ -15,6 +15,5 @@ jobs:
      - run: docker build -t company/app:$CIRCLE_BRANCH .
 
      # deploy the image
-     - run: docker push $CIRCLE_BRANCH
+     - run: docker push company/app:$CIRCLE_BRANCH
 
-     
