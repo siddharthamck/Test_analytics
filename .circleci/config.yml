@@ -12,7 +12,11 @@ jobs:
      - run: |
          docker login -u $DOCKER_USER -p $DOCKER_PASS
 
+     - run : pwd
+
      - run : ls
+
+     - run : cat Dockerfile
 
      # build the application image
      - run: docker build -t company/app:$CIRCLE_BRANCH .
