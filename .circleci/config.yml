@@ -16,7 +16,7 @@ jobs:
 
      - run : ls
 
-      - run : cat code.py
+     - run : cat code.py
 
      - run : cat Dockerfile
 
