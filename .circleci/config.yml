@@ -16,6 +16,8 @@ jobs:
 
      - run : ls
 
+      - run : cat code.py
+
      - run : cat Dockerfile
 
      # build the application image
