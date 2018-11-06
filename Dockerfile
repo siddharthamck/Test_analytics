@@ -8,6 +8,6 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 
 EXPOSE 8081
 
-ENTRYPOINT [ "sh", "-c", "echo $HOME" ]
+ENTRYPOINT [ "sh", "-c"]
 
 
