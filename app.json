@@ -1,8 +1,8 @@
 {
   "scripts": {
     "dokku": {
-      "predeploy": "whoami",
-      "postdeploy": "docker start dokku/python-sample:latest"
+      "predeploy": "pip3 install jupyter",
+      "postdeploy": "pwd"
     }
   }
 }
