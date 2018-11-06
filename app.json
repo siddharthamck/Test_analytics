@@ -2,7 +2,7 @@
   "scripts": {
     "dokku": {
       "predeploy": "whoami",
-      "postdeploy": "pwd"
+      "postdeploy": "docker start dokku/python-sample:latest"
     }
   }
 }
