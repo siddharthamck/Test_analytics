@@ -5,7 +5,7 @@
 1. Ubunto machine (either AWS/Azure/VM) to run Dokku
 
 
-#Dokku Setup instructions 
+# Dokku Setup instructions 
 
 1. Fire up an instance with Ubuntu 14.04 with 2 GB RAM on AWS/Azure. Ensure that port 22 and 80 are open.
 2. In Terminal Execute - wget https://raw.githubusercontent.com/dokku/dokku/v0.12.13/bootstrap.sh
