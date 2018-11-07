@@ -20,7 +20,8 @@
 2. Configure your local environment to push builds to Dokku `git remote add dokku dokku@<server ip>:node-sample`
 
 # Accessing the Notebook running on Dokku 
-1. The deployed notebook will be available at `http://ip-address:8082`
+1. The deployed notebook will be available at `http://ip-address:8082` 
+(Token will be available from doku logs, this is a workaround until jupyter security configuration is completed)
 
 # Other Dokku commands - 
 1. To rebuild after a successful deploy - `dokku ps:rebuild python-sample`
