@@ -10,7 +10,9 @@ COPY entrypoint.sh ./
 
 EXPOSE 8081
 
-ENTRYPOINT ["jupyter-notebook", "--allow-root", "--ip=0.0.0.0", "--port=8081"]
+RUN chmod +x entrypoint.sh
+
+ENTRYPOINT ["./entrypoint.sh"]
 
 
 
