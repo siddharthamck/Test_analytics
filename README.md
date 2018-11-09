@@ -36,6 +36,8 @@
 1. Automate and parameterise execution through Papermill
 2. Schedule runs using dokku run, and cron schedules
 3. Add jupyter notebook security
+4. Support for branches - dev, test and prod 
+5. SUpport for data environments - dev, test and prod
 
 # To run commands, e.g. papermill 
 1. To run a notebook using papermill`dokku run python-sample papermill my_book.ipynb /tmp/a.json`
