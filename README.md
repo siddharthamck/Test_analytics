@@ -39,3 +39,13 @@
 
 # To run commands, e.g. papermill 
 1. To run a notebook using papermill`dokku run python-sample papermill my_book.ipynb /tmp/a.json`
+2. To run in existing container - 
+  `dokku enter  python-sample web`
+  `papermill my_book.ipynb /tmp/a.json`
+  `cat /tmp/a.json`
+  
+# To run in Kubernetes using minikube (steps might need revision/corrections)
+1.Deploy container on Kubernetes - `kubectl run python-app --image=siddhartharai/company:latest --port=8081`
+2.To  open app in browser - `minikube service python-app`
+3.To execute `kubectl exec python-app-787c4c876b-fcwqd papermill my_book.ipynb /tmp/a.json`
+4.To see results - `kubectl exec python-app-787c4c876b-fcwqd cat /tmp/a.json`
