@@ -32,7 +32,7 @@ threshold = 0.5
 ```
 
 You will start by defining the parameters as above in a regular jupyter cell, and then tag the jupyter notebook using the Jupyter menu View -> Cell Toolbar -> Tags.
-Following this, continue developing the Jupyter notebook as usual.  
+Following this, continue developing the Jupyter notebook as usual  
 
 ## Defining the notebook parameters
 To run the notebook defined above with a different set of parameters update the parameter file `params.yaml`, as shown below - 
